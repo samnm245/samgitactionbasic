@@ -1,0 +1,12 @@
+name: frist workflow
+on: push
+
+joibs: 
+  build :
+  runs-on: ubuntu-latest
+  steps:
+  -name : checkout code
+  user : action/checkout@v4
+
+  -name: print helo message
+  runs: echo "hello from git hub action"
